@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Добро пожаловать в <%= title %>!</p>
+    <form name="generateForm" action="/download" method="post">
+       <label>Тип файла</label></br>
+      <input type="text" name="filetype" /></br></br>
+        <label>Размер (Б)</label></br>
+        <input type="number" name="filesize" /></br></br>
+        <button type="submit" id="submit">Отправить</button>
+    </form>
+  </body>
+</html>
